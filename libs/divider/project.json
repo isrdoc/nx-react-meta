@@ -1,0 +1,23 @@
+{
+  "root": "libs/divider",
+  "sourceRoot": "libs/divider/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/divider/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/divider"],
+      "options": {
+        "jestConfig": "libs/divider/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
