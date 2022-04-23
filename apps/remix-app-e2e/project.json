@@ -4,9 +4,9 @@
   "projectType": "application",
   "targets": {
     "e2e": {
-      "executor": "@nrwl/cypress:cypress",
+      "executor": "@nrwl/workspace:run-script",
       "options": {
-        "cypressConfig": "apps/remix-app-e2e/cypress.json"
+        "script": "e2e"
       },
       "configurations": {
         "production": {

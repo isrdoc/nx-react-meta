@@ -13,10 +13,7 @@ export function Index() {
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
-            <h1>
-              <span> Hello there, </span>
-              Welcome next-app 👋
-            </h1>
+            <h1>Welcome next-app</h1>
           </div>
 
           <Divider />
