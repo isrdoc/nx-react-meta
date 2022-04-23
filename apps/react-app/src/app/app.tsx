@@ -1,6 +1,6 @@
 import { Route, Link, Routes } from 'react-router-dom';
 
-import { Divider } from '@nx-nest-next/divider';
+import { Divider } from '@nx-react-1/divider';
 
 export function App() {
   return (

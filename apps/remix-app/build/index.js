@@ -350,7 +350,7 @@ function handleRequest(request, responseStatusCode, responseHeaders, remixContex
   });
 }
 
-// route:/Users/igorsrdoc/Documents/Code/Next/nx-nest-next/apps/remix-app/app/root.tsx
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/root.tsx
 var root_exports = {};
 __export(root_exports, {
   CatchBoundary: () => CatchBoundary,
@@ -458,7 +458,7 @@ function RemixLogo() {
   }));
 }
 
-// route:/Users/igorsrdoc/Documents/Code/Next/nx-nest-next/apps/remix-app/app/routes/demos/actions.tsx
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/demos/actions.tsx
 var actions_exports = {};
 __export(actions_exports, {
   action: () => action,
@@ -508,7 +508,7 @@ function ActionsDemo() {
   }, /* @__PURE__ */ React.createElement("code", null, "useActionData"))))));
 }
 
-// route:/Users/igorsrdoc/Documents/Code/Next/nx-nest-next/apps/remix-app/app/routes/demos/correct.tsx
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/demos/correct.tsx
 var correct_exports = {};
 __export(correct_exports, {
   default: () => NiceWork
@@ -518,7 +518,7 @@ function NiceWork() {
   return /* @__PURE__ */ React.createElement("h1", null, "You got it right!");
 }
 
-// route:/Users/igorsrdoc/Documents/Code/Next/nx-nest-next/apps/remix-app/app/routes/demos/params.tsx
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/demos/params.tsx
 var params_exports = {};
 __export(params_exports, {
   default: () => Boundaries,
@@ -547,7 +547,7 @@ function Boundaries() {
   }, "This one will throw an error")))));
 }
 
-// route:/Users/igorsrdoc/Documents/Code/Next/nx-nest-next/apps/remix-app/app/routes/demos/params/index.tsx
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/demos/params/index.tsx
 var params_exports2 = {};
 __export(params_exports2, {
   default: () => Boundaries2
@@ -559,7 +559,7 @@ function Boundaries2() {
   }, "client errors"), ")"), /* @__PURE__ */ React.createElement("p", null, "Loaders and Actions can throw a ", /* @__PURE__ */ React.createElement("code", null, "Response"), " instead of an error and Remix will render the CatchBoundary instead of the component. This is great when loading data from a database isn't found. As soon as you know you can't render the component normally, throw a 404 response and send your app into the catch boundary. Just like error boundaries, catch boundaries bubble, too."));
 }
 
-// route:/Users/igorsrdoc/Documents/Code/Next/nx-nest-next/apps/remix-app/app/routes/demos/params/$id.tsx
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/demos/params/$id.tsx
 var id_exports = {};
 __export(id_exports, {
   CatchBoundary: () => CatchBoundary2,
@@ -611,7 +611,7 @@ var meta3 = ({ data }) => {
   };
 };
 
-// route:/Users/igorsrdoc/Documents/Code/Next/nx-nest-next/apps/remix-app/app/routes/demos/about.tsx
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/demos/about.tsx
 var about_exports = {};
 __export(about_exports, {
   default: () => Index,
@@ -634,7 +634,7 @@ function Index() {
   }, "read all about nested routes in the docs"), "."), /* @__PURE__ */ React.createElement("hr", null), /* @__PURE__ */ React.createElement(import_remix6.Outlet, null)));
 }
 
-// route:/Users/igorsrdoc/Documents/Code/Next/nx-nest-next/apps/remix-app/app/routes/demos/about/index.tsx
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/demos/about/index.tsx
 var about_exports2 = {};
 __export(about_exports2, {
   default: () => AboutIndex
@@ -647,7 +647,7 @@ function AboutIndex() {
   }, "Check out one of them here."))));
 }
 
-// route:/Users/igorsrdoc/Documents/Code/Next/nx-nest-next/apps/remix-app/app/routes/demos/about/whoa.tsx
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/demos/about/whoa.tsx
 var whoa_exports = {};
 __export(whoa_exports, {
   default: () => AboutIndex2
@@ -660,7 +660,7 @@ function AboutIndex2() {
   }, "Go back to the ", /* @__PURE__ */ React.createElement("code", null, "/about"), " index."))));
 }
 
-// route:/Users/igorsrdoc/Documents/Code/Next/nx-nest-next/apps/remix-app/app/routes/index.tsx
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/index.tsx
 var routes_exports = {};
 __export(routes_exports, {
   default: () => Index2,
@@ -679,7 +679,7 @@ function Divider(props) {
   return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h1", null, "Welcome to my Divider!"));
 }
 
-// route:/Users/igorsrdoc/Documents/Code/Next/nx-nest-next/apps/remix-app/app/routes/index.tsx
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/index.tsx
 var loader2 = () => {
   let data = {
     resources: [
@@ -739,7 +739,7 @@ function Index2() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { "version": "0e5b5880", "entry": { "module": "/build/entry.client-FH7UHXNI.js", "imports": ["/build/_shared/chunk-3KKSSUTW.js", "/build/_shared/chunk-5QWXRFDY.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-NTOP5BRL.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": true, "hasErrorBoundary": true }, "routes/demos/about": { "id": "routes/demos/about", "parentId": "root", "path": "demos/about", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/about-XYMENK26.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/about/index": { "id": "routes/demos/about/index", "parentId": "routes/demos/about", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/demos/about/index-Z6SL7ECG.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/about/whoa": { "id": "routes/demos/about/whoa", "parentId": "routes/demos/about", "path": "whoa", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/about/whoa-YT7HOSKF.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/actions": { "id": "routes/demos/actions", "parentId": "root", "path": "demos/actions", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/actions-YCAZDEWE.js", "imports": void 0, "hasAction": true, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/correct": { "id": "routes/demos/correct", "parentId": "root", "path": "demos/correct", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/correct-K2XEOVSS.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/params": { "id": "routes/demos/params", "parentId": "root", "path": "demos/params", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/params-OKZJ2F6B.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/params/$id": { "id": "routes/demos/params/$id", "parentId": "routes/demos/params", "path": ":id", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/params/$id-YCM7YNLP.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": true, "hasErrorBoundary": true }, "routes/demos/params/index": { "id": "routes/demos/params/index", "parentId": "routes/demos/params", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/demos/params/index-RIMDKF5U.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-6P7IN4U4.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-0E5B5880.js" };
+var assets_manifest_default = { "version": "7b7a88f3", "entry": { "module": "/build/entry.client-FH7UHXNI.js", "imports": ["/build/_shared/chunk-3KKSSUTW.js", "/build/_shared/chunk-5QWXRFDY.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-GXD6BTHN.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": true, "hasErrorBoundary": true }, "routes/demos/about": { "id": "routes/demos/about", "parentId": "root", "path": "demos/about", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/about-QFDI6YN3.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/about/index": { "id": "routes/demos/about/index", "parentId": "routes/demos/about", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/demos/about/index-SPD2SELZ.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/about/whoa": { "id": "routes/demos/about/whoa", "parentId": "routes/demos/about", "path": "whoa", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/about/whoa-Y3OL5H6C.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/actions": { "id": "routes/demos/actions", "parentId": "root", "path": "demos/actions", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/actions-26S752GF.js", "imports": void 0, "hasAction": true, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/correct": { "id": "routes/demos/correct", "parentId": "root", "path": "demos/correct", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/correct-PJY64LCZ.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/params": { "id": "routes/demos/params", "parentId": "root", "path": "demos/params", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/params-2CA377EZ.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/params/$id": { "id": "routes/demos/params/$id", "parentId": "routes/demos/params", "path": ":id", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/params/$id-WEZHLFO6.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": true, "hasErrorBoundary": true }, "routes/demos/params/index": { "id": "routes/demos/params/index", "parentId": "routes/demos/params", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/demos/params/index-JDITCCDL.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-OIAVRQV3.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-7B7A88F3.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var entry = { module: entry_server_exports };

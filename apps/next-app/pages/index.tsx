@@ -1,6 +1,6 @@
 import styles from './index.module.css';
 
-import { Divider } from '@nx-nest-next/divider';
+import { Divider } from '@nx-react-1/divider';
 
 export function Index() {
   /*

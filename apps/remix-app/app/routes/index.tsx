@@ -1,7 +1,7 @@
 import type { MetaFunction, LoaderFunction } from 'remix';
 import { useLoaderData, json, Link } from 'remix';
 
-import { Divider } from '@nx-nest-next/divider';
+import { Divider } from '@nx-react-1/divider';
 
 type IndexData = {
   resources: Array<{ name: string; url: string }>;

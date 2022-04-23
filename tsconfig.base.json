@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-nest-next/divider": ["libs/divider/src/index.ts"]
+      "@nx-react-1/divider": ["libs/divider/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
