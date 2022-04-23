@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@nrwl/next:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
         "root": "apps/next-app",
@@ -42,7 +44,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/next-app"],
+      "outputs": [
+        "coverage/apps/next-app"
+      ],
       "options": {
         "jestConfig": "apps/next-app/jest.config.ts",
         "passWithNoTests": true
@@ -50,9 +54,13 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/next-app/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "apps/next-app/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     }
   },

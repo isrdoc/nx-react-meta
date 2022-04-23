@@ -4,6 +4,7 @@
     "design-system-divider": "libs/design-system/divider",
     "design-system-storybook": "libs/design-system/storybook",
     "design-system-storybook-e2e": "apps/design-system-storybook-e2e",
+    "electron-app": "apps/electron-app",
     "express-service": "apps/express-service",
     "nest-service": "apps/nest-service",
     "next-app": "apps/next-app",

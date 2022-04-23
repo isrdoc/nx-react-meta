@@ -6,14 +6,20 @@
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/design-system/divider/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "libs/design-system/divider/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/design-system/divider"],
+      "outputs": [
+        "coverage/libs/design-system/divider"
+      ],
       "options": {
         "jestConfig": "libs/design-system/divider/jest.config.ts",
         "passWithNoTests": true

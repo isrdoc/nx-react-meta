@@ -5,12 +5,16 @@
   "targets": {
     "build": {
       "executor": "@nrwl/node:webpack",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/nest-service",
         "main": "apps/nest-service/src/main.ts",
         "tsConfig": "apps/nest-service/tsconfig.app.json",
-        "assets": ["apps/nest-service/src/assets"]
+        "assets": [
+          "apps/nest-service/src/assets"
+        ]
       },
       "configurations": {
         "production": {
@@ -34,14 +38,20 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/nest-service/**/*.ts"]
+        "lintFilePatterns": [
+          "apps/nest-service/**/*.ts"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/nest-service"],
+      "outputs": [
+        "coverage/apps/nest-service"
+      ],
       "options": {
         "jestConfig": "apps/nest-service/jest.config.ts",
         "passWithNoTests": true

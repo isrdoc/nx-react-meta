@@ -1,0 +1,38 @@
+diff --git a/node_modules/nx-electron/src/utils/generate-package-json.js b/node_modules/nx-electron/src/utils/generate-package-json.js
+index 855b59a..7eecbd9 100644
+--- a/node_modules/nx-electron/src/utils/generate-package-json.js
++++ b/node_modules/nx-electron/src/utils/generate-package-json.js
+@@ -1,7 +1,7 @@
+ "use strict";
+ Object.defineProperty(exports, "__esModule", { value: true });
+ exports.generatePackageJson = void 0;
+-const fileutils_1 = require("@nrwl/workspace/src/utilities/fileutils");
++const { readJsonFile, writeJsonFile } = require('@nrwl/devkit')
+ const config_1 = require("./config");
+ /**
+  * Creates a package.json in the output directory for support  to install dependencies within containers.
+@@ -23,13 +23,13 @@ function generatePackageJson(projectName, graph, options) {
+     };
+     try {
+         // try loading local project package json
+-        packageJson = fileutils_1.readJsonFile(`${options.projectRoot}/package.json`);
++        packageJson = readJsonFile(`${options.projectRoot}/package.json`);
+         if (!packageJson.dependencies) {
+             packageJson.dependencies = {};
+         }
+     }
+     catch (e) { }
+-    const rootPackageJson = fileutils_1.readJsonFile(`${options.root}/package.json`);
++    const rootPackageJson = readJsonFile(`${options.root}/package.json`);
+     const npmDeps = findAllNpmDeps(projectName, graph);
+     const implicitDeps = findAllNpmImplicitDeps(rootPackageJson, options.implicitDependencies);
+     const dependencies = Object.assign({}, implicitDeps, npmDeps);
+@@ -47,7 +47,7 @@ function generatePackageJson(projectName, graph, options) {
+         }
+         packageJson.dependencies[packageName] = version;
+     });
+-    fileutils_1.writeJsonFile(`${options.outputPath}/package.json`, packageJson);
++    writeJsonFile(`${options.outputPath}/package.json`, packageJson);
+ }
+ exports.generatePackageJson = generatePackageJson;
+ function findAllNpmDeps(projectName, graph, list = {}, seen = new Set()) {
