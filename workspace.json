@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "divider": "libs/divider",
+    "express-service": "apps/express-service",
     "nest-service": "apps/nest-service",
     "next-app": "apps/next-app",
     "next-app-e2e": "apps/next-app-e2e",
