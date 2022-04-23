@@ -1,7 +1,7 @@
 import type { MetaFunction, LoaderFunction } from 'remix';
 import { useLoaderData, json, Link } from 'remix';
 
-import { Divider } from '@nx-react-1/divider';
+import { Divider } from '@nx-react-1/design-system-divider';
 
 type IndexData = {
   resources: Array<{ name: string; url: string }>;
@@ -63,7 +63,7 @@ export default function Index() {
   return (
     <div className="remix__page">
       <main>
-        <h2>Welcome to Remix!</h2>
+        <h1>Welcome remix-app!</h1>
         <Divider />
         <p>We're stoked that you're here. 🥳</p>
         <p>

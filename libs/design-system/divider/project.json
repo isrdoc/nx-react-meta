@@ -1,6 +1,6 @@
 {
-  "root": "libs/divider",
-  "sourceRoot": "libs/divider/src",
+  "root": "libs/design-system/divider",
+  "sourceRoot": "libs/design-system/divider/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -8,14 +8,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/divider/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["libs/design-system/divider/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/divider"],
+      "outputs": ["coverage/libs/design-system/divider"],
       "options": {
-        "jestConfig": "libs/divider/jest.config.ts",
+        "jestConfig": "libs/design-system/divider/jest.config.ts",
         "passWithNoTests": true
       }
     }

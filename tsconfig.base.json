@@ -15,7 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-react-1/divider": ["libs/divider/src/index.ts"]
+      "@nx-react-1/design-system-divider": [
+        "libs/design-system/divider/src/index.ts"
+      ],
+      "@nx-react-1/design-system/storybook": [
+        "libs/design-system/storybook/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

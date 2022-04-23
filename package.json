@@ -18,6 +18,7 @@
     "@remix-run/serve": "^1.0.6",
     "core-js": "^3.6.5",
     "express": "4.17.2",
+    "global": "^4.4.0",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0",
@@ -29,6 +30,8 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@babel/core": "7.12.13",
+    "@babel/preset-typescript": "7.12.13",
     "@nestjs/schematics": "^8.0.0",
     "@nestjs/testing": "^8.0.0",
     "@nrwl/cli": "13.10.0",
@@ -42,9 +45,16 @@
     "@nrwl/node": "14.0.1",
     "@nrwl/react": "^14.0.1",
     "@nrwl/remix": "^13.7.1",
+    "@nrwl/storybook": "^14.0.2",
     "@nrwl/web": "14.0.1",
     "@nrwl/workspace": "13.10.0",
     "@remix-run/dev": "^1.0.6",
+    "@storybook/addon-essentials": "~6.4.12",
+    "@storybook/builder-webpack5": "~6.4.12",
+    "@storybook/core-server": "~6.4.12",
+    "@storybook/manager-webpack5": "~6.4.12",
+    "@storybook/react": "~6.4.12",
+    "@svgr/webpack": "^5.4.0",
     "@testing-library/react": "13.1.1",
     "@types/express": "4.17.13",
     "@types/jest": "27.4.1",
@@ -55,7 +65,7 @@
     "@typescript-eslint/eslint-plugin": "~5.18.0",
     "@typescript-eslint/parser": "~5.18.0",
     "babel-jest": "27.5.1",
-    "cypress": "^9.1.0",
+    "babel-loader": "8.1.0",
     "eslint": "~8.12.0",
     "eslint-config-next": "12.1.5",
     "eslint-config-prettier": "8.1.0",
@@ -71,6 +81,7 @@
     "prettier": "^2.5.1",
     "react-test-renderer": "18.0.0",
     "ts-jest": "27.1.4",
-    "typescript": "~4.6.2"
+    "typescript": "~4.6.2",
+    "url-loader": "^3.0.0"
   }
 }

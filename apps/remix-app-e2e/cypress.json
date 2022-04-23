@@ -8,5 +8,6 @@
   "video": true,
   "videosFolder": "../../dist/cypress/apps/remix-app-e2e/videos",
   "screenshotsFolder": "../../dist/cypress/apps/remix-app-e2e/screenshots",
+  "baseUrl": "http://localhost:3000",
   "chromeWebSecurity": false
 }

@@ -2,5 +2,26 @@
   "root": "apps/remix-app",
   "sourceRoot": "apps/remix-app",
   "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/workspace:run-script",
+      "options": {
+        "script": "build"
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/workspace:run-script",
+      "options": {
+        "script": "dev"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/react-app/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
   "tags": []
 }

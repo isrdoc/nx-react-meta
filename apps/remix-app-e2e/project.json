@@ -6,8 +6,7 @@
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/remix-app-e2e/cypress.json",
-        "devServerTarget": "remix-app:serve"
+        "cypressConfig": "apps/remix-app-e2e/cypress.json"
       },
       "configurations": {
         "production": {

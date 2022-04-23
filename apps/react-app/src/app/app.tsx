@@ -1,6 +1,6 @@
 import { Route, Link, Routes } from 'react-router-dom';
 
-import { Divider } from '@nx-react-1/divider';
+import { Divider } from '@nx-react-1/design-system-divider';
 
 export function App() {
   return (
@@ -15,6 +15,8 @@ export function App() {
           </li>
         </ul>
       </div>
+
+      <h1>Hello!</h1>
 
       <Divider />
 
