@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "divider": "libs/divider",
+    "nest-app": "apps/nest-app",
     "next-app": "apps/next-app",
     "next-app-e2e": "apps/next-app-e2e",
     "react-app": "apps/react-app",
