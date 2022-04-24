@@ -9,6 +9,9 @@
     "postinstall": "npx remix setup node",
     "serve": "npx remix-serve build",
     "e2e": "yarn run e2e:serve & yarn run e2e:run",
+    "e2e:p": "../../node_modules/npm-run-all/bin/run-p/index.js --race e2e:dev e2e:run",
+    "e2e:c": "../../node_modules/concurrently/dist/bin/concurrently.js 'yarn e2e:serve' 'yarn e2e:run'",
+    "e2e:dev": "nx dev remix-app",
     "e2e:serve": "nx serve remix-app",
     "e2e:run": "cypress run -C ./cypress.json"
   },

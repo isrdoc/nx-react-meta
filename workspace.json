@@ -11,6 +11,7 @@
     "next-app-e2e": "apps/next-app-e2e",
     "react-app": "apps/react-app",
     "react-app-e2e": "apps/react-app-e2e",
+    "react-app-e2e-pw": "apps/react-app-e2e-pw",
     "remix-app": "apps/remix-app",
     "remix-app-e2e": "apps/remix-app-e2e"
   }
