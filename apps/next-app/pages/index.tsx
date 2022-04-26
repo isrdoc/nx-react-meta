@@ -13,7 +13,7 @@ export function Index() {
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
-            <h1>Welcome next-app</h1>
+            <h1 className="text-green-500">Welcome next-app</h1>
           </div>
 
           <Divider />
