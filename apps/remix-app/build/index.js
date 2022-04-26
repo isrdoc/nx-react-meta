@@ -361,7 +361,9 @@ __export(root_exports, {
 init_react();
 var import_remix2 = __toESM(require_remix());
 var links = () => {
-  return [];
+  return [
+    { rel: "stylesheet", href: "/tailwindcss" }
+  ];
 };
 function App() {
   return /* @__PURE__ */ React.createElement(Document, null, /* @__PURE__ */ React.createElement(Layout, null, /* @__PURE__ */ React.createElement(import_remix2.Outlet, null)));
@@ -430,7 +432,9 @@ function Layout({ children }) {
     className: "remix-app__footer"
   }, /* @__PURE__ */ React.createElement("div", {
     className: "container remix-app__footer-content"
-  }, /* @__PURE__ */ React.createElement("p", null, "\xA9 You and me!"))));
+  }, /* @__PURE__ */ React.createElement("p", {
+    className: "text-green-500"
+  }, "\xA9 You and me!"))));
 }
 function RemixLogo() {
   return /* @__PURE__ */ React.createElement("svg", {
@@ -660,11 +664,20 @@ function AboutIndex2() {
   }, "Go back to the ", /* @__PURE__ */ React.createElement("code", null, "/about"), " index."))));
 }
 
+// route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/tailwindcss.tsx
+var tailwindcss_exports = {};
+__export(tailwindcss_exports, {
+  loader: () => loader2
+});
+init_react();
+var import_remix_tailwind = require("remix-tailwind");
+var loader2 = () => (0, import_remix_tailwind.serveTailwindCss)();
+
 // route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/index.tsx
 var routes_exports = {};
 __export(routes_exports, {
   default: () => Index2,
-  loader: () => loader2,
+  loader: () => loader3,
   meta: () => meta5
 });
 init_react();
@@ -677,12 +690,12 @@ init_react();
 init_react();
 function Divider(props) {
   return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h1", {
-    className: "text-blue-500"
+    className: "text-red-500"
   }, "Welcome to the awesome Divider!"));
 }
 
 // route:/Users/igorsrdoc/Documents/Code/Next/nx-react-1/apps/remix-app/app/routes/index.tsx
-var loader2 = () => {
+var loader3 = () => {
   let data = {
     resources: [
       {
@@ -725,7 +738,9 @@ function Index2() {
   let data = (0, import_remix9.useLoaderData)();
   return /* @__PURE__ */ React.createElement("div", {
     className: "remix__page"
-  }, /* @__PURE__ */ React.createElement("main", null, /* @__PURE__ */ React.createElement("h1", null, "Welcome remix-app!"), /* @__PURE__ */ React.createElement(Divider, null), /* @__PURE__ */ React.createElement("p", null, "We're stoked that you're here. \u{1F973}"), /* @__PURE__ */ React.createElement("p", null, "Feel free to take a look around the code to see how Remix does things, it might be a bit different than what you\u2019re used to. When you're ready to dive deeper, we've got plenty of resources to get you up-and-running quickly."), /* @__PURE__ */ React.createElement("p", null, "Check out all the demos in this starter, and then just delete the", " ", /* @__PURE__ */ React.createElement("code", null, "app/routes/demos"), " and ", /* @__PURE__ */ React.createElement("code", null, "app/styles/demos"), " ", "folders when you're ready to turn this into your next project.")), /* @__PURE__ */ React.createElement("aside", null, /* @__PURE__ */ React.createElement("h2", null, "Demos In This App"), /* @__PURE__ */ React.createElement("ul", null, data.demos.map((demo) => /* @__PURE__ */ React.createElement("li", {
+  }, /* @__PURE__ */ React.createElement("main", null, /* @__PURE__ */ React.createElement("h1", {
+    className: "text-violet-500"
+  }, "Welcome remix-app!"), /* @__PURE__ */ React.createElement(Divider, null), /* @__PURE__ */ React.createElement("p", null, "We're stoked that you're here. \u{1F973}"), /* @__PURE__ */ React.createElement("p", null, "Feel free to take a look around the code to see how Remix does things, it might be a bit different than what you\u2019re used to. When you're ready to dive deeper, we've got plenty of resources to get you up-and-running quickly."), /* @__PURE__ */ React.createElement("p", null, "Check out all the demos in this starter, and then just delete the", " ", /* @__PURE__ */ React.createElement("code", null, "app/routes/demos"), " and ", /* @__PURE__ */ React.createElement("code", null, "app/styles/demos"), " ", "folders when you're ready to turn this into your next project.")), /* @__PURE__ */ React.createElement("aside", null, /* @__PURE__ */ React.createElement("h2", null, "Demos In This App"), /* @__PURE__ */ React.createElement("ul", null, data.demos.map((demo) => /* @__PURE__ */ React.createElement("li", {
     key: demo.to,
     className: "remix__page__resource"
   }, /* @__PURE__ */ React.createElement(import_remix9.Link, {
@@ -741,7 +756,7 @@ function Index2() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { "version": "5d07c648", "entry": { "module": "/build/entry.client-DZ7UTVS2.js", "imports": ["/build/_shared/chunk-IQCNFVKS.js", "/build/_shared/chunk-5QWXRFDY.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-RVBW4OS6.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": true, "hasErrorBoundary": true }, "routes/demos/about": { "id": "routes/demos/about", "parentId": "root", "path": "demos/about", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/about-TVXM6TWF.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/about/index": { "id": "routes/demos/about/index", "parentId": "routes/demos/about", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/demos/about/index-BZALSJUA.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/about/whoa": { "id": "routes/demos/about/whoa", "parentId": "routes/demos/about", "path": "whoa", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/about/whoa-KHBMFFRY.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/actions": { "id": "routes/demos/actions", "parentId": "root", "path": "demos/actions", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/actions-6GQXR2S3.js", "imports": void 0, "hasAction": true, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/correct": { "id": "routes/demos/correct", "parentId": "root", "path": "demos/correct", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/correct-PJY64LCZ.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/params": { "id": "routes/demos/params", "parentId": "root", "path": "demos/params", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/params-XV3CMQS5.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/params/$id": { "id": "routes/demos/params/$id", "parentId": "routes/demos/params", "path": ":id", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/params/$id-SEANXWI6.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": true, "hasErrorBoundary": true }, "routes/demos/params/index": { "id": "routes/demos/params/index", "parentId": "routes/demos/params", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/demos/params/index-JDITCCDL.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-F3P6UAPO.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-5D07C648.js" };
+var assets_manifest_default = { "version": "f55eb34f", "entry": { "module": "/build/entry.client-FH7UHXNI.js", "imports": ["/build/_shared/chunk-3KKSSUTW.js", "/build/_shared/chunk-5QWXRFDY.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-QDKHLQVS.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": true, "hasErrorBoundary": true }, "routes/demos/about": { "id": "routes/demos/about", "parentId": "root", "path": "demos/about", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/about-QFDI6YN3.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/about/index": { "id": "routes/demos/about/index", "parentId": "routes/demos/about", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/demos/about/index-SPD2SELZ.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/about/whoa": { "id": "routes/demos/about/whoa", "parentId": "routes/demos/about", "path": "whoa", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/about/whoa-Y3OL5H6C.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/actions": { "id": "routes/demos/actions", "parentId": "root", "path": "demos/actions", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/actions-26S752GF.js", "imports": void 0, "hasAction": true, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/correct": { "id": "routes/demos/correct", "parentId": "root", "path": "demos/correct", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/correct-PJY64LCZ.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/params": { "id": "routes/demos/params", "parentId": "root", "path": "demos/params", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/params-2CA377EZ.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/demos/params/$id": { "id": "routes/demos/params/$id", "parentId": "routes/demos/params", "path": ":id", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/demos/params/$id-WEZHLFO6.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": true, "hasErrorBoundary": true }, "routes/demos/params/index": { "id": "routes/demos/params/index", "parentId": "routes/demos/params", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/demos/params/index-JDITCCDL.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-LUABMFEK.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/tailwindcss": { "id": "routes/tailwindcss", "parentId": "root", "path": "tailwindcss", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/tailwindcss-TRS64YWQ.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-F55EB34F.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var entry = { module: entry_server_exports };
@@ -817,6 +832,14 @@ var routes = {
     index: void 0,
     caseSensitive: void 0,
     module: whoa_exports
+  },
+  "routes/tailwindcss": {
+    id: "routes/tailwindcss",
+    parentId: "root",
+    path: "tailwindcss",
+    index: void 0,
+    caseSensitive: void 0,
+    module: tailwindcss_exports
   },
   "routes/index": {
     id: "routes/index",

@@ -63,7 +63,7 @@ export default function Index() {
   return (
     <div className="remix__page">
       <main>
-        <h1>Welcome remix-app!</h1>
+        <h1 className="text-violet-500">Welcome remix-app!</h1>
         <Divider />
         <p>We're stoked that you're here. 🥳</p>
         <p>

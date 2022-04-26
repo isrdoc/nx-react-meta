@@ -16,6 +16,7 @@ import type { LinksFunction } from 'remix';
 // https://remix.run/api/app#links
 export let links: LinksFunction = () => {
   return [
+    { rel: 'stylesheet', href: '/tailwindcss' },
     // { rel: 'stylesheet', href: globalStylesUrl },
     // {
     //   rel: 'stylesheet',
@@ -147,7 +148,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       </div>
       <footer className="remix-app__footer">
         <div className="container remix-app__footer-content">
-          <p>&copy; You and me!</p>
+          <p className="text-green-500">&copy; You and me!</p>
         </div>
       </footer>
     </div>
