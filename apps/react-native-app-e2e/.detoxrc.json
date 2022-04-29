@@ -27,7 +27,7 @@
     "simulator": {
       "type": "ios.simulator",
       "device": {
-        "type": "iPhone 13"
+        "id": "A4BE3F8D-7156-46BF-851B-BF5811186654"
       }
     },
     "emulator": {
